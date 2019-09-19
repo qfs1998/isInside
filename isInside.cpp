@@ -50,7 +50,7 @@ bool shape::isInside(const point&p)
 	double c = CD.x*CM.y - CM.x*CD.y;
 	//DA X DM
 	double d = DA.x*DM.y - DM.x*DA.y;
-	cout << a << '\t' << b << '\t' << c << '\t' << d << endl;
+	//cout << a << '\t' << b << '\t' << c << '\t' << d << endl;
 	//=0代表在边上即 sin值为0
 	if ((a >= 0 && b >= 0 && c >= 0 && d >= 0) || (a <= 0 && b <= 0 && c <= 0 && d <= 0))
 		return true;
